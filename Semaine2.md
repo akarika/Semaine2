@@ -3,7 +3,7 @@
 
 Dans cette deuxiéme semaine **GOC** mise en bouche du code **HTML**
 
-###HTML Le b.a.-ba 1 er partie
+##HTML Le b.a.-ba 1 er partie
 ------------------
 
 HTML **signifie HyperText Markup Language** *texte qui inclut des liens* 
@@ -12,7 +12,7 @@ HTML **signifie HyperText Markup Language** *texte qui inclut des liens*
 
 -La balise `<!DOCTYPE html>` toujours en **1er**.
 
-####Un document est composé de plusieurs partie####
+###Un document est composé de plusieurs partie####
 
  * `<head>` tête,endroit où l'on met les informations concernant le fichier HTML, comme son titre par exemple
  *  `<body>` corps,partie visible de la page web
@@ -26,7 +26,7 @@ HTML **signifie HyperText Markup Language** *texte qui inclut des liens*
 
 ![#####exemple de structure basique#####](http://simplonline.co/uploads/images/Front_End/zuliegarnier/structure_de_base_html.jpg)
 
-####Les éléments du corps  
+###Les éléments du corps  
 
 * `<p>` balise pour creer des paragraphes
 * `<h1>` à `<h6>` balises titres H1 plus grand H6 le plus petit
@@ -35,7 +35,7 @@ HTML **signifie HyperText Markup Language** *texte qui inclut des liens*
 ex:`<a href="http://www.codecademy.com">Mon site préféré !</a>`
 `<img>`balise image,**elle se ferme et s'ouvre d'elle-même**
 * Avec la balise `<img>`, on utilise la source de l'image que l'on veut mettre. Grâce à cette information, la balise sait où trouver l'image. Pour ajouter cette source, on utilise le code `src`.Ce qui donne de manière générale : `<img src = "" />`
-Notez le `/>` qui va fermer la balise.
+<span style="color:red">Notez le `/>` qui va fermer la balise.</span>
 * code image cliquable
 `<a href="http://www.codecademy.com/">
     <img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg"/>
@@ -45,34 +45,54 @@ Notez le `/>` qui va fermer la balise.
 
 
 -------
-###HTML Le b.a.-ba 2 éme partie
+##HTML Le b.a.-ba 2 éme partie
 
 ------------------
 
 
-#### Créer des listes ordonnée et non ordonnées
+### Créer des listes ordonnée et non ordonnées
 
 
  * liste ordonnées avec la balise `<ol>`
- * liste non ordonnées avec la balsie `<ul>`
+ * liste non ordonnées avec la balisee `<ul>`
 * la balise liste `<li>`correspond à une ligne d'une liste non ordonnée ou ordonnée.
+ <ul style="color:red">
+ <li><strong>exemple de types de listes non ordonnées</li>
+ 	<ol>
+ 		<li>liste</li>
+ 		<li>ordonnés</li>
+ 	</ol>
+ <li>qui sont imbriqués</strong></li>
+ </ul>
+ 
+ ```
+  <ul style="color:red">
+ <li><strong>exemple de types de listes non ordonnées</li>
+ 	<ol>
+ 		<li>liste</li>
+ 		<li>ordonnés</li>
+ 	</ol>
+ <li>qui sont imbriqués</strong></li>
+ </ul>
+ ```
+ 
 
-####Avoir le style####
 
-* taille 
+###Avoir le style####
+
+* <span style = "font-size:30px">taille </span>`style = "font-size:12px">` 
 `<p style = "font-size:12px">`
-* la couleur
-`<h2 style="color:red">`
-* type de police
+* <span style="color:red">la couleur</span>
+`<tr style="color:red">`
+* <span style="font-family:Calibri">type de police</span>
 `<h1 style="font-family: Arial">Titre</h1>`
-attribut 
 
 
-#### Changer la couleur d'arrière-plan
+### Changer la couleur d'arrière-plan
 
 `style="background-color: red`
 
-####Aligner le texte####
+###Aligner le texte####
 
 * "text-align:left" pour aligner le texte à gauche
 * "text-align:right" pour aligner le texte à droite
@@ -81,9 +101,9 @@ attribut
 *  mot en gras`<strong>` `</strong>` et italique `<em>``</em>`
 
 ----
-###HTML Le b.a.-ba 3 éme partie
+##HTML Le b.a.-ba 3 éme partie
 -----
-####Tableau
+###Tableau
 
 * tout tableau commence par la balise `<table>`
 	* créations de ligne avec `<tr>`(pour table row signifiant "ligne du tableau")
@@ -124,3 +144,142 @@ attribut
         
 
 * L'en-tête du tableau
+	* Ces balises sont à insérer à l'intérieur de la balise `<table>`.
+	* la balise `<thead>` contient des informations sur le tableau 
+	* la balise `<tbody>` contiendra les données à l'intérieur du tableau
+	* pour qu'une ligne de titre sur toute la longueur du tableau, ici s'étend sur 3 colonnes `<th colspan="3">` `</th>`
+	
+	
+	<html>
+    <head>
+        <title>Les tableaux</title>
+    </head>
+    <meta charset="utf-8">
+
+    <body>
+    <table style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th colspan="2"style="color:red">Les monstres célèbres par année de naissance</th>
+                </tr>
+                <tr style="border-bottom:1px solid black;">
+                    <th style="padding:5px;"><em>Les monstres célèbres</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Année de naissance</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:5px;">King Kong</td>
+                    <td style="padding:5px;border-left:1px solid black;">1933</td>     
+                </tr>
+                <tr>
+                    <td style="padding:5px;">Dracula</td>
+                    <td style="padding:5px;border-left:1px solid black;">1897</td>
+                </tr>
+                <tr>
+                    <td style="padding:5px;">Frankenstein</td>
+                    <td style="padding:5px;border-left:1px solid black;">1944</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+
+</html>	
+	
+```
+
+<html>
+    <head>
+        <title>Les tableaux</title>
+    </head>
+    <meta charset="utf-8">
+    <body>
+    <table style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th colspan="2"style="color:red">Les monstres célèbres par année de naissance</th>
+                </tr>
+                <tr style="border-bottom:1px solid black;">
+                    <th style="padding:5px;"><em>Les monstres célèbres</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Année de naissance</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:5px;">King Kong</td>
+                    <td style="padding:5px;border-left:1px solid black;">1933</td>     
+                </tr>
+                <tr>
+                    <td style="padding:5px;">Dracula</td>
+                    <td style="padding:5px;border-left:1px solid black;">1897</td>
+                </tr>
+                <tr>
+                    <td style="padding:5px;">Frankenstein</td>
+                    <td style="padding:5px;border-left:1px solid black;">1944</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+```
+###DIV et SPAN
+
+* la balise `<div>``</div>` vous permet de diviser votre page en plusieurs patries et d'affecter à chacune d'elles un style particulier
+
+
+<html>
+<meta charset="utf-8">
+	<head>
+		<title>Résultat</title>
+	</head>
+	<body>
+		<div style="width:50px; height:50px; background-color:red"></div>
+		<div style="width:50px; height:50px; background-color:blue"></div>
+		<div style="width:50px; height:50px; background-color:green"></div>
+		<a href="http://websitesetup.org/html5-cheat-sheet/"><div style="width:50px; height:50px; background-color:yellow"></div></a>
+	</body>
+</html>
+
+```
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<head>
+		<title>Résultat</title>
+	</head>
+	<body>
+		<div style="width:50px; height:50px; background-color:red"></div>
+		<div style="width:50px; height:50px; background-color:blue"></div>
+		<div style="width:50px; height:50px; background-color:green"></div>
+		<a href="http://websitesetup.org/html5-cheat-sheet/"><div style="width:50px; height:50px; background-color:yellow"></div></a>
+	</body>
+</html>
+```
+
+
+* `<span>` vous permet de contrôler le style des parties les plus petites de votre page, vous pouvez amodifier la taille et la famille de police et n'importe quel attribut de style que vous connaissez. 
+
+<html>
+	<head>
+		<title>Résultat</title>
+	</head>
+	<body>
+		<p>Ma police <span style="color:red">favorite</span>, c'est <span style="font-family:Impact">Impact</span></p>
+	</body>
+</html>
+
+```
+
+<html>
+	<head>
+		<title>Résultat</title>
+	</head>
+	<body>
+		<p>Ma police <span style="color:red">favorite</span>, c'est <span style="font-family:Impact">Impact</span></p>
+	</body>
+</html>
+
+```
+
+###Lien vers mes **badges** [code academy](https://www.codecademy.com/fr/users/akarika/achievements)
