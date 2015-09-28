@@ -3,7 +3,7 @@
 
 Dans cette deuxiéme semaine **GOC** mise en bouche du code **HTML**
 
-###HTML Le b.a.-ba### 1 er partie
+###HTML Le b.a.-ba 1 er partie
 ------------------
 
 HTML **signifie HyperText Markup Language** *texte qui inclut des liens* 
@@ -26,7 +26,7 @@ HTML **signifie HyperText Markup Language** *texte qui inclut des liens*
 
 ![#####exemple de structure basique#####](http://simplonline.co/uploads/images/Front_End/zuliegarnier/structure_de_base_html.jpg)
 
-####Les éléments du corps #### 
+####Les éléments du corps  
 
 * `<p>` balise pour creer des paragraphes
 * `<h1>` à `<h6>` balises titres H1 plus grand H6 le plus petit
@@ -45,7 +45,7 @@ Notez le `/>` qui va fermer la balise.
 
 
 -------
-###HTML Le b.a.-ba### 2 éme partie
+###HTML Le b.a.-ba 2 éme partie
 
 ------------------
 #### Créer des listes ordonnée et non ordonnées
