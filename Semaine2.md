@@ -8,7 +8,7 @@ Dans cette deuxiéme semaine **GOC** mise en bouche du code **HTML**
 
 HTML **signifie HyperText Markup Language** *texte qui inclut des liens* 
 
--On appelle **balise** ce qui se trouve entre ces ** `< >` ** se ferme  ** `< / >` **.
+-On appelle **balise** ce qui se trouve entre ces `< >`  se ferme   `< / >`.
 
 -La balise `<!DOCTYPE html>` toujours en **1er**.
 
@@ -48,35 +48,79 @@ Notez le `/>` qui va fermer la balise.
 ###HTML Le b.a.-ba 2 éme partie
 
 ------------------
+
+
 #### Créer des listes ordonnée et non ordonnées
 
 
  * liste ordonnées avec la balise `<ol>`
  * liste non ordonnées avec la balsie `<ul>`
-  la balise liste `<li>`correspond à une ligne d'une liste non ordonnée ou ordonnée.
+* la balise liste `<li>`correspond à une ligne d'une liste non ordonnée ou ordonnée.
 
 ####Avoir le style####
 
--taille 
+* taille 
 `<p style = "font-size:12px">`
--la couleur
+* la couleur
 `<h2 style="color:red">`
--type de police
+* type de police
 `<h1 style="font-family: Arial">Titre</h1>`
-attribut `style`
-font-size: 14px
-color: orange
-font-family: Bodoni
+attribut 
 
-c. Changer la couleur d'arrière-plan
+
+#### Changer la couleur d'arrière-plan
 
 `style="background-color: red`
 
-*  Aligner le texte
+####Aligner le texte####
 
-a. "text-align:left" pour aligner le texte à gauche
-b. "text-align:right" pour aligner le texte à droite
-c. "text-align:center" pour centrer le texte `"style="text-align:center"`
+* "text-align:left" pour aligner le texte à gauche
+* "text-align:right" pour aligner le texte à droite
+* "text-align:center" pour centrer le texte `"style="text-align:center"`
 
 *  mot en gras`<strong>` `</strong>` et italique `<em>``</em>`
 
+----
+###HTML Le b.a.-ba 3 éme partie
+-----
+####Tableau
+
+* tout tableau commence par la balise `<table>`
+	* créations de ligne avec `<tr>`(pour table row signifiant "ligne du tableau")
+	*  une cellule de données `<td>` (pour table data, signifiant "donnée du tableau")
+	
+	
+		<table border="1px">
+            <tr>
+                <td>Un</td>
+                <td>quatre</td>
+                </tr>
+            <tr>
+               <td>Deux</td>
+               <td>cinq</td>
+               </tr>
+            <tr>
+                <td>Trois</td>
+				 <td>six</td>
+            </tr>
+        </table>
+
+```
+	<table border="1px">
+            <tr>
+                <td>Un</td>
+                <td>quatre</td>
+                </tr>
+            <tr>
+               <td>Deux</td>
+               <td>cinq</td>
+               </tr>
+            <tr>
+                <td>Trois</td>
+				 <td>six</td>
+            </tr>
+        </table>
+ ```                               
+        
+
+* L'en-tête du tableau
