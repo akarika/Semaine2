@@ -12,6 +12,12 @@ HTML **signifie HyperText Markup Language** *texte qui inclut des liens*
 
 -La balise `<!DOCTYPE html>` toujours en **1er**.
 
+-Puis `<html>` et fermer le texte par `</html>`
+
+-écrire un commentaire non`<!-- Commentaire -->` 
+
+-codage de la page occidental `<meta charset="UTF-8">`
+
 ###Un document est composé de plusieurs partie####
 
  * `<head>` tête,endroit où l'on met les informations concernant le fichier HTML, comme son titre par exemple
@@ -96,7 +102,7 @@ ex:`<a href="http://www.codecademy.com">Mon site préféré !</a>`
 
 * "text-align:left" pour aligner le texte à gauche
 * "text-align:right" pour aligner le texte à droite
-* "text-align:center" pour centrer le texte `"style="text-align:center"`
+* "text-align:center" pour centrer le texte `style="text-align:center"`
 
 *  mot en gras`<strong>` `</strong>` et italique `<em>``</em>`
 
